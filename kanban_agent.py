@@ -84,18 +84,3 @@ class KanbanAgent:
 
         response = safe_predict(self.llm, prompt)
         return response
-    
-#  openai = ChatOpenAI(
-#     model = "moonshot-v1-8k",
-#     api_key = "sk-34VTTPEEjhfH7Ej2c99E1Il644amlZqcbuLE5EhQlgPe0OLi",
-#     base_url = "https://api.moonshot.cn/v1",
-# )
-
-# memory = ConversationSummaryMemory(llm=openai)
-# data = __get_keyvalue()
-# for kv in struc:
-#     memory.save_context(
-#         {"input":kv['key']},
-#         {"output":kv['value']}
-#     )
-# print(memory.buffer)
