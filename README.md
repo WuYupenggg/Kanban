@@ -84,6 +84,7 @@ A full-featured Kanban board application built with Flask, SQLite, and modern we
 ```
 kanban-board/
 ├── app.py                 # Main application file
+├── kanban_agent.py
 ├── requirements.txt       # Python dependencies
 ├── static/               # Static files
 │   ├── css/             # CSS stylesheets
@@ -107,7 +108,8 @@ kanban-board/
 4. Create tasks within columns
 5. Drag and drop tasks between columns
 6. Use the search feature to find specific tasks
-7. Toggle between light and dark themes as needed
+7. Generate the task report
+8. Toggle between light and dark themes as needed
 
 ## Security Features
 
