@@ -19,7 +19,7 @@ class KanbanAgent:
     def _init_llm(self):
         return ChatOpenAI(
             model="qwen-plus",
-            api_key=os.environ("qwen"),
+            api_key=os.environ.get("qwen"),
             base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
             temperature=0.7
         )
